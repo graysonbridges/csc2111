@@ -8,7 +8,7 @@
 #include <iostream>
 int main()
 {
-   ReadFile* rf = new ReadFile("cds.txt");
+   ReadFile* rf = new ReadFile("cds.txt");//slcaneer kdiff3 necessary comment
    WriteFile* wf = new WriteFile("out.txt");
 
    while(!rf->eof())
