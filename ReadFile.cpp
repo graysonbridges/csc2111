@@ -2,18 +2,19 @@
 #include <iostream>
 #include <string>
 
-ReadFile* createReadFile(const char* file_name)
+ReadFile::ReadFile(const char* file_name)
 {
-   ReadFile* rf = new ReadFile;
-
-   rf->input_file.open(file_name);
-   rf->closed = false;
-   rf->_eof = false;
-
-   return rf;
+	rf = new ReadFile;
+	rf->closed = false;
+	rf->_eof = false;
 }
 
-void destroyReadFile(ReadFile* rf)
+ReadFile::~ReadFile()
+{
+	delete[] rf;
+}
+
+void ReadFile::destroyReadFile(ReadFile* rf)
 {
    close(rf);
    delete rf;
@@ -24,7 +25,7 @@ bool eof(ReadFile* rf)
    return rf->_eof;
 }
 
-void close(ReadFile* rf)
+void close()
 {
    if (!rf->closed)
    {
