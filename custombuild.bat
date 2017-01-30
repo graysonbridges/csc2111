@@ -7,6 +7,6 @@ g++ -c Tokens.cpp
 g++ -c ReadFile.cpp
 g++ -c WriteFile.cpp
 g++ -c Lab02Driver.cpp
-g++ -o final Lab02Driver.o Keyboard.o Matrix.o Random.o String.o Tokens.o ReadFile.o WriteFile.o -o lab2.exe
-lab2.exe
+g++ -o final Lab02Driver.o Keyboard.o Matrix.o Random.o String.o Tokens.o ReadFile.o WriteFile.o -o readWrite.exe
+readWrite.exe
 pause

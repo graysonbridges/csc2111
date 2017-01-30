@@ -13,6 +13,7 @@ class WriteFile
 	private: 
 		ofstream output_file;
 		bool closed;
+		
 	public:
 		WriteFile(const char* file_name);
 		~WriteFile();
