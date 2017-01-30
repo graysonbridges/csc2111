@@ -1,8 +1,10 @@
+//Author: Samantha Caneer
+//Date: 1-30-17
+
 #if !defined WRITE_FILE
 #define WRITE_FILE
 
 #include "Text.h"
-
 #include <fstream>
 using namespace std;
 

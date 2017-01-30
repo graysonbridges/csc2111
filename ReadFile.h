@@ -1,8 +1,10 @@
+//Author: Grayson Bridges
+//Date: 1-30-17
+
 #if !defined READ_H
 #define READ_H
 
 #include "Text.h"
-
 #include <fstream>
 using namespace std;
 

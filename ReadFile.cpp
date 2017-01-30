@@ -1,3 +1,6 @@
+//Author: Grayson Bridges
+//Date: 1-30-17
+
 #include "ReadFile.h"
 #include <iostream>
 #include <string>

@@ -9,7 +9,7 @@ int main()
    ReadFile* rf = new ReadFile("cds.txt");
    WriteFile* wf = new WriteFile("out.txt");
 
-   while(!rf->eof_f())
+   while(!rf->eof())
    {
       String* line = rf->readLine();
       wf->writeLine(line);
@@ -23,3 +23,8 @@ int main()
 
    return 0;
 }
+<<<<<<< HEAD
+//Error should insue
+=======
+//scaneer was here
+>>>>>>> 31db25fc1e79093e968c0ea997e0a6591cf3619a

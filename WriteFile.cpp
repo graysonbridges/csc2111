@@ -1,3 +1,6 @@
+//Author: Samantha Caneer
+//Date: 1-30-17
+
 #include "WriteFile.h"
 #include <sstream>
 
