@@ -1,3 +1,6 @@
+//Author: Samantha Caneer and Grayson Bridges
+//Date: 1-30-17
+
 #include "ReadFile.h"
 #include "WriteFile.h"
 #include "String.h"
