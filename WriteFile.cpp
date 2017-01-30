@@ -1,31 +1,26 @@
 #include "WriteFile.h"
 #include <sstream>
 
-WriteFile::WriteFile(const char* file_name);
+WriteFile::WriteFile(const char* file_name)
 {
-   output_file.open(file_name);
-   writeLine();
+   this->output_file.open(file_name);
+   //writeLine(); //Remove?
    closed = false;
 }
 
 WriteFile::~WriteFile()
 {
-  
+	close();
 }
 
-void close()
+void WriteFile::close()
 {
-   if (!this->closed)
-   {
-      this->output_file.close();
-      this->closed = true;
-   }
+	if (!closed)
+		closed = true;
 }
 
-void writeLine(String* line)
+void WriteFile::writeLine(String* line)
 {
-   if (!this->closed && line->length() > 0)
-   {
-      this->output_file << line->getText() << endl;
-   }
+	if (!closed && line->length() > 0)
+		this->output_file << line->getText() << endl;
 }
