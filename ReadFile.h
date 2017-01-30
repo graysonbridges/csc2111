@@ -10,17 +10,16 @@ class ReadFile
 {
 	private:
 		ifstream input_file;
-		bool _eof;
 		bool closed;
+		bool eof;
 		
 	public:
 		ReadFile(const char* file_name);
 		~ReadFile();
 		
-		void destroyReadFile(ReadFile rf);
-		void close(ReadFile rf);
-		bool eof(ReadFile rf);
-		String* readLine(ReadFile rf);
+		bool eof_f();
+		void close();
+		String* readLine();
 };
 
 #endif
